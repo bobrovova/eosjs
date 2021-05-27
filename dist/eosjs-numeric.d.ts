@@ -63,11 +63,11 @@ export declare const stringToPublicKey: (s: string) => Key;
 export declare const publicKeyToLegacyString: (key: Key) => string;
 /** Convert `key` to string (base-58) form */
 export declare const publicKeyToString: (key: Key) => string;
-/** If a key is in the legacy format (`EOS` prefix), then convert it to the new format (`PUB_K1_`).
+/** If a key is in the legacy format (`JUN` prefix), then convert it to the new format (`PUB_K1_`).
  * Leaves other formats untouched
  */
 export declare const convertLegacyPublicKey: (s: string) => string;
-/** If a key is in the legacy format (`EOS` prefix), then convert it to the new format (`PUB_K1_`).
+/** If a key is in the legacy format (`JUN` prefix), then convert it to the new format (`PUB_K1_`).
  * Leaves other formats untouched
  */
 export declare const convertLegacyPublicKeys: (keys: string[]) => string[];
