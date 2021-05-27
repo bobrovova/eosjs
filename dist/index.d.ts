@@ -5,4 +5,6 @@ import * as Numeric from './eosjs-numeric';
 import * as RpcInterfaces from './eosjs-rpc-interfaces';
 import { RpcError } from './eosjs-rpcerror';
 import * as Serialize from './eosjs-serialize';
-export { Api, ApiInterfaces, JsonRpc, Numeric, RpcInterfaces, RpcError, Serialize };
+import * as ECC from './eosjs-ecc-migration';
+import * as JsSignatureProvider from './eosjs-jssig';
+export { Api, ApiInterfaces, JsonRpc, Numeric, RpcInterfaces, RpcError, Serialize, ECC, JsSignatureProvider };

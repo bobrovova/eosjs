@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Serialize = exports.RpcError = exports.RpcInterfaces = exports.Numeric = exports.JsonRpc = exports.ApiInterfaces = exports.Api = void 0;
+exports.JsSignatureProvider = exports.ECC = exports.Serialize = exports.RpcError = exports.RpcInterfaces = exports.Numeric = exports.JsonRpc = exports.ApiInterfaces = exports.Api = void 0;
 var eosjs_api_1 = require("./eosjs-api");
 Object.defineProperty(exports, "Api", { enumerable: true, get: function () { return eosjs_api_1.Api; } });
 var ApiInterfaces = require("./eosjs-api-interfaces");
@@ -15,4 +15,8 @@ var eosjs_rpcerror_1 = require("./eosjs-rpcerror");
 Object.defineProperty(exports, "RpcError", { enumerable: true, get: function () { return eosjs_rpcerror_1.RpcError; } });
 var Serialize = require("./eosjs-serialize");
 exports.Serialize = Serialize;
+var ECC = require("./eosjs-ecc-migration");
+exports.ECC = ECC;
+var JsSignatureProvider = require("./eosjs-jssig");
+exports.JsSignatureProvider = JsSignatureProvider;
 //# sourceMappingURL=index.js.map
